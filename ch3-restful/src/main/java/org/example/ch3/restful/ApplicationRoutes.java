@@ -1,6 +1,7 @@
 package org.example.ch3.restful;
 
 
+import io.quarkus.vertx.http.runtime.filters.Filters;
 import io.quarkus.vertx.web.Route;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
@@ -24,13 +25,21 @@ public class ApplicationRoutes {
     }
 
 
-    @Route(path="/declarativeok", methods = Route.HttpMethod.GET)  //设置HTTP路径和方法
-    public void greetings(RoutingContext routingContext){  //RoutingContext获取请求信息
+    @Route(path = "/declarativeok", methods = Route.HttpMethod.GET)  //设置HTTP路径和方法
+    public void greetings(RoutingContext routingContext) {  //RoutingContext获取请求信息
         String name = routingContext.request().getParam("name");  // 获取查询蚕食
-        if (name == null){
+        if (name == null) {
             name = "world";
         }
 
-        routingContext.response().end("OK "+ name + " you are right" ); //逻辑处理
+        routingContext.response().end("OK " + name + " you are right"); //逻辑处理
+    }
+
+    public void filters(@Observes Filters filters) { // 提供Filters对象注册过滤器
+        filters.register(rc -> {
+            rc.response() //修改响应
+                    .putHeader("V-Header", "Header added by Vertx Filter");
+            rc.next(); // 继续过滤链
+        }, 10); // 设定执行顺序
     }
 }
