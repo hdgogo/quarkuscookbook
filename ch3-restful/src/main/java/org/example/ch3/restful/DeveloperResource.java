@@ -16,6 +16,7 @@ public class DeveloperResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response createDeveloper(Developer developer) {
         developer.persist();
+        System.out.println("name is:"+developer.getName());
         return Response.created( //将响应状态码设置为201 ，以Location头作为URL进行创建
                         UriBuilder.fromResource(DeveloperResource.class) // 设置资源类的路径
                                 .path(Long.toString(developer.getId()))  // 在Location头中设置开发者ID
