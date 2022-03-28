@@ -17,6 +17,7 @@
         <module>ch2-scaffolding</module>
         <module>ch3-restful</module>
         <module>ch4-config</module>
+        <module>ch5-progmodel</module>
     </modules>
 
 </project>
