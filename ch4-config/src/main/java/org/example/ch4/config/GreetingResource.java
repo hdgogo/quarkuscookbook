@@ -37,6 +37,9 @@ public class GreetingResource {
     @Inject
     GroupingConfiguration groupingConfiguration;
 
+    @Inject
+    NewGroupingConfiguration newGroupingConfiguration;
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
@@ -89,6 +92,14 @@ public class GreetingResource {
     public String groupingConfig(){
         groupingConfiguration.output.recipients.forEach(p -> System.out.println(p));
         return groupingConfiguration.message + groupingConfiguration.suffix;
+    }
+
+
+    @GET
+    @Path("/newgroupingconfing")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String newGroupingConfig(){
+        return newGroupingConfiguration.host() + " " +newGroupingConfiguration.port()+ " "+ newGroupingConfiguration.log().suffix() + " "+ newGroupingConfiguration.log().enabled() + " "+newGroupingConfiguration.log().rotate();
     }
 
 }
