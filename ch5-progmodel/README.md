@@ -32,18 +32,56 @@ $ ./mvnw quarkus:add-extension -Dextensions="quarkus-hibernate-validator"
 
 ## 创建自定义校验
 
+通过实现javax.validation.ConstraintValidator接口来使用Bean Validation 扩展模型
+
 
 ## 以程序化的方式校验对象
 
+使用Bean Validation `javax.validation.Validator`类
 
 ## 依赖注入
 
+Quarkus中的Bean发现遵循标准CDI的简化过程。
+
+[CDI]（https://oreil.ly/jm4QF）
+
 ## 创建工厂类
+
+使用CDI中的javax.enterprise.inject.Produces概念。
+
+CDI有一个叫作producer的概念，它允许你创建任何类型的对象，需要在可解析的实例列表中添加一个新的bean或类
 
 
 ## 执行对象生命周期事件
 
+CDI使用@javax.annotation.PostConstruct和@javax.annotation.PreDestroy 注解进行对象生命周期的管理，对于PostConstruct来说， 
+使用这些注解的方法将在对象创建之后被调用，对于PreDestroy来说，使用这些注解的方法将在对象被销毁之前被调用
+
 
 ## 执行应用程序生命周期事件
 
+`io.quarkus.runtime.StartupEvent` 和 `io.quarkus.runtime.ShutdownEvent` 
+
+在应用程序启动是，产生StartupEvent事件， 在关闭时，会产生ShutdownEvent事件。
+
 ## 使用命名限定符
+
+使用@javax.inject.Named注解
+
+[注入点的限定符]（https://oreil.ly/5NydQ）
+
+
+## 使用自定义限定符
+
+使用@javax.injext.Qualifier注解
+
+[Qualifiers](https://oreil.ly/MOfwa)
+
+
+## 限定和配置注解
+
+使用procucer中的InjectionPoint和限定符注解上的非绑定属性的组合，可以同时限定和配置一个Bean
+
+[注入点元数据]（https://oreil.ly/BVmV2）
+
+## 创建拦截器

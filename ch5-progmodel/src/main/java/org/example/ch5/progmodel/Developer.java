@@ -12,6 +12,7 @@ public class Developer {
     @Size(min=4) //字符串最小长度为4
     private String name;
 
+    @JvmLanguage
     @NotBlank  //不能为空
     @JsonbProperty("favorite-language")
     private String favoriteLanguage;
