@@ -85,3 +85,10 @@ CDI使用@javax.annotation.PostConstruct和@javax.annotation.PreDestroy 注解�
 [注入点元数据]（https://oreil.ly/BVmV2）
 
 ## 创建拦截器
+
+
+## 行为测试
+
+编写行为测试用来验证服务连接的正确性， 而不是验证服务的内部逻辑
+
+Quarkus的测试解决方案基于JUnit5， 并与REST-Assured测试框架紧密集成。
