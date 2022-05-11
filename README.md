@@ -7,3 +7,14 @@
 [ch4-config](./ch4-config/README.md) : 配置
 
 [ch5-progmodel](./ch5-progmodel/READEME.md) :编程模型
+
+
+
+
+
+
+
+
+
+# 附录
+[app-spif](./app-spi/README.md) : jdk的SPI
