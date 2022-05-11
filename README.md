@@ -6,7 +6,9 @@
 
 [ch4-config](./ch4-config/README.md) : 配置
 
-[ch5-progmodel](./ch5-progmodel/READEME.md) :编程模型
+[ch5-progmodel](./ch5-progmodel/README.md) :编程模型
+
+[ch6-buildpack](./ch6-buildpack/README.md) :打包Quarkus应用程序
 
 
 
