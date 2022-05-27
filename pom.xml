@@ -13,6 +13,7 @@
     <module>ch5-progmodel</module>
     <module>app-spi</module>
     <module>ch6-buildpack</module>
+    <module>ch7-persistence</module>
   </modules>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>

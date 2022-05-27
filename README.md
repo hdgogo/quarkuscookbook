@@ -10,8 +10,7 @@
 
 [ch6-buildpack](./ch6-buildpack/README.md) :打包Quarkus应用程序
 
-
-
+[ch7-persistence](./ch7-persistence/README.md) :持久化
 
 
 
