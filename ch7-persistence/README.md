@@ -51,5 +51,5 @@ quarkus.datasource.jdbc.max-size=16
 
 使用 quarkus-narayana-jta扩展的@javax.transaction.Transactional注解。
 
-@Transactional注解可以被添加道任何CID bean的方法和类中，让这些方法成为事务性的。
+@Transactional注解可以被添加道任何CDI bean的方法和类中，让这些方法成为事务性的。
 
