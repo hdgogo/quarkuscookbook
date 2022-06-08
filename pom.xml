@@ -15,6 +15,7 @@
     <module>ch6-buildpack</module>
     <module>ch7-persistence</module>
     <module>app-openapi</module>
+    <module>app-restclient</module>
   </modules>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
