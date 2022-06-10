@@ -20,3 +20,6 @@
 
 [app-openapi](./app-openapi/README.md): Quarkus基于OpenAPI规范公开其API描述， 并通过Swagger UI提供给用户
 
+[app-restclient](./app-restclient/README.md): 使用REST Client
+
+[app-security-with-jpa](./app-security-with-jpa/README.md): Quarkus应用程序如何使用数据库存储用户身份
