@@ -17,6 +17,7 @@
     <module>app-openapi</module>
     <module>app-restclient</module>
     <module>app-security-jpa</module>
+    <module>app-security-jwt</module>
   </modules>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>

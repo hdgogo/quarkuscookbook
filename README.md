@@ -23,3 +23,6 @@
 [app-restclient](./app-restclient/README.md): 使用REST Client
 
 [app-security-with-jpa](./app-security-with-jpa/README.md): Quarkus应用程序如何使用数据库存储用户身份
+
+
+[app-security-with-jwt](./app-security-with-jwt/README.md): Quarkus应用程序如何使用JWT验证用户身份
