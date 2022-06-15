@@ -18,6 +18,8 @@
 # 附录
 [app-spif](./app-spi/README.md) : jdk的SPI
 
+[app-cdi](./app-cdi/README.md) : quarkus CDI
+
 [app-openapi](./app-openapi/README.md): Quarkus基于OpenAPI规范公开其API描述， 并通过Swagger UI提供给用户
 
 [app-restclient](./app-restclient/README.md): 使用REST Client

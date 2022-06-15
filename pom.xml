@@ -18,6 +18,7 @@
     <module>app-restclient</module>
     <module>app-security-jpa</module>
     <module>app-security-jwt</module>
+    <module>app-kogito</module>
   </modules>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
